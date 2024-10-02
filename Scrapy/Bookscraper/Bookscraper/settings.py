@@ -12,9 +12,13 @@ BOT_NAME = "Bookscraper"
 SPIDER_MODULES = ["Bookscraper.spiders"]
 NEWSPIDER_MODULE = "Bookscraper.spiders"
 
+FEEDS = {
+    'books data.json': {'format':'json'}
+}
+
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = "Bookscraper (+http://www.yourdomain.com)"
+# USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36"
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -64,6 +68,7 @@ ROBOTSTXT_OBEY = True
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
    "Bookscraper.pipelines.BookscraperPipeline": 300,
+#    "Bookscraper.pipelines.SaveToMySQLPipeline": 400,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
