@@ -1,11 +1,24 @@
 import scrapy
 from Bookscraper.items import BookItem
+from urllib.parse import urlencode
 import random
+
+API_KEY = 'f3dcf86d-22df-459b-9dde-7f5d55b37d55'
+
+def get_proxy_url(url):
+    payload = {'api_key': API_KEY, 'url':url}
+    proxy_url= 'https://proxy.scrapeops.io/v1/?' + urlencode(payload)
+    return proxy_url
+
 
 class BookspiderSpider(scrapy.Spider):
     name = "bookspider"
-    allowed_domains = ["books.toscrape.com"]
+    allowed_domains = ["books.toscrape.com", "proxy.scrapeops.io"]
     start_urls = ["https://books.toscrape.com/"]
+
+
+    def start_requests(self):
+        yield scrapy.Request(url=get_proxy_url(self.start_urls[0]), callback=self.parse)
 
     def parse(self, response):
         books = response.css('article.product_pod')
@@ -16,7 +29,7 @@ class BookspiderSpider(scrapy.Spider):
                 book_url = "https://books.toscrape.com/" + relative_url
             else:
                 book_url = "https://books.toscrape.com/catalogue/" + relative_url
-            yield response.follow(book_url, callback = self.parse_book_page)
+            yield scrapy.Request(url=get_proxy_url(book_url), callback = self.parse_book_page)
 
         next_page= response.css('li.next a::attr(href)').get()
         next_page=None
@@ -25,8 +38,8 @@ class BookspiderSpider(scrapy.Spider):
                 next_page_url = "https://books.toscrape.com/" + next_page
             else:
                 next_page_url = "https://books.toscrape.com/catalogue/" + next_page
-            yield response.follow(next_page_url, callback = self.parse)
-
+            yield scrapy.Request(url=get_proxy_url(next_page_url), callback = self.parse)
+# , meta={"proxy": "http://user:asd3e3a345c45:12345678@gate.smartproxy.com:7000"}
 
     def parse_book_page(self, response):
         table_rows= response.css("table tr")

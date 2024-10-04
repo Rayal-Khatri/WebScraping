@@ -16,10 +16,7 @@ FEEDS = {
     'books data.json': {'format':'json'}
 }
 
-SCRAPEOPS_API_KEY= 'f3dcf86d-22df-459b-9dde-7f5d55b37d55'
-SCRAPEOPS_FAKE_USER_AGENT_ENDPOINT ='https://headers.scrapeops.io/v1/user-agents'
-SCRAPEOPS_FAKE_USER_AGENT_ENABLED = True
-SCRAPEOPS_NUM_RESULTS = 50
+
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 # USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36"
@@ -59,8 +56,10 @@ ROBOTSTXT_OBEY = False
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 DOWNLOADER_MIDDLEWARES = {
-#    "Bookscraper.middlewares.BookscraperDownloaderMiddleware": 543,
+   "Bookscraper.middlewares.BookscraperDownloaderMiddleware": 543,
    "Bookscraper.middlewares.ScrapeOpsFakeBrowserHeaderAgentMiddleware": 400,
+#    "rotating_proxies.middlewares.RotatingProxyMiddleware":610,
+#    "rotating_proxies.middlewares.BanDetectionMiddleware":620,
 }
 
 # Enable or disable extensions
@@ -101,3 +100,17 @@ ITEM_PIPELINES = {
 REQUEST_FINGERPRINTER_IMPLEMENTATION = "2.7"
 TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"
 FEED_EXPORT_ENCODING = "utf-8"
+
+
+SCRAPEOPS_API_KEY= 'f3dcf86d-22df-459b-9dde-7f5d55b37d55'
+SCRAPEOPS_FAKE_USER_AGENT_ENDPOINT ='https://headers.scrapeops.io/v1/user-agents'
+SCRAPEOPS_FAKE_USER_AGENT_ENABLED = True
+SCRAPEOPS_NUM_RESULTS = 50
+
+
+
+ROTATING_PROXY_LIST =[
+    '202.29.226.134:32241',
+    '89.219.34.146:10043',
+    '137.184.182.145:38421',
+]
