@@ -53,13 +53,16 @@ ROBOTSTXT_OBEY = False
 #    "Bookscraper.middlewares.BookscraperSpiderMiddleware": 543,
 #}
 
+
+
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 DOWNLOADER_MIDDLEWARES = {
-   "Bookscraper.middlewares.BookscraperDownloaderMiddleware": 543,
-   "Bookscraper.middlewares.ScrapeOpsFakeBrowserHeaderAgentMiddleware": 400,
+#    "Bookscraper.middlewares.BookscraperDownloaderMiddleware": 543,
+#    "Bookscraper.middlewares.ScrapeOpsFakeBrowserHeaderAgentMiddleware": 400,
 #    "rotating_proxies.middlewares.RotatingProxyMiddleware":610,
 #    "rotating_proxies.middlewares.BanDetectionMiddleware":620,
+    "scrapeops_scrapy_proxy_sdk.scrapeops_scrapy_proxy_sdk.ScrapeOpsScrapyProxySdk":725
 }
 
 # Enable or disable extensions
