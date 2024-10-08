@@ -8,6 +8,7 @@
 from sqlite3 import adapters
 from itemadapter import ItemAdapter
 from scrapy.exceptions import DropItem
+import mysql.connector
 
 class ChocolatescraperPipeline:
     def process_item(self, item, spider):
@@ -42,3 +43,17 @@ class DuplicatePipeline:
         else:
              self.name_seen.add(adapter['name'])
              return item
+        
+
+class SaveToSQL(object):
+    def __init__(self):
+        self.creaate_connection()
+
+    def create_connection(self):
+        self.connection = mysql.connector.connect(
+            host = 'localhost',
+            user = 'root',
+            password = 'Doramon9841',
+            database = 'chocolate'
+        )
+        self.curr = self.connection.cursor() 

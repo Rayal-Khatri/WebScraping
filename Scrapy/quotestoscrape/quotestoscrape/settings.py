@@ -1,4 +1,4 @@
-# Scrapy settings for chocolatescraper project
+# Scrapy settings for quotestoscrape project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -7,14 +7,14 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = "chocolatescraper"
+BOT_NAME = "quotestoscrape"
 
-SPIDER_MODULES = ["chocolatescraper.spiders"]
-NEWSPIDER_MODULE = "chocolatescraper.spiders"
+SPIDER_MODULES = ["quotestoscrape.spiders"]
+NEWSPIDER_MODULE = "quotestoscrape.spiders"
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = "chocolatescraper (+http://www.yourdomain.com)"
+#USER_AGENT = "quotestoscrape (+http://www.yourdomain.com)"
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -45,13 +45,13 @@ ROBOTSTXT_OBEY = True
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    "chocolatescraper.middlewares.ChocolatescraperSpiderMiddleware": 543,
+#    "quotestoscrape.middlewares.QuotestoscrapeSpiderMiddleware": 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    "chocolatescraper.middlewares.ChocolatescraperDownloaderMiddleware": 543,
+#    "quotestoscrape.middlewares.QuotestoscrapeDownloaderMiddleware": 543,
 #}
 
 # Enable or disable extensions
@@ -62,11 +62,9 @@ ROBOTSTXT_OBEY = True
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-ITEM_PIPELINES = {
-   "chocolatescraper.pipelines.PriceUSDtoNRP": 100,
-   "chocolatescraper.pipelines.DuplicatePipeline": 200,
-   "chocolatescraper.pipelines.SaveToSQL": 50 ,
-}
+#ITEM_PIPELINES = {
+#    "quotestoscrape.pipelines.QuotestoscrapePipeline": 300,
+#}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
@@ -91,5 +89,9 @@ ITEM_PIPELINES = {
 
 # Set settings whose default value is deprecated to a future-proof value
 REQUEST_FINGERPRINTER_IMPLEMENTATION = "2.7"
-TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"
 FEED_EXPORT_ENCODING = "utf-8"
+DOWNLOAD_HANDLERS = {
+    "http": "scrapy_playwright.handler.ScrapyPlaywrightDownloadHandler",
+    "https": "scrapy_playwright.handler.ScrapyPlaywrightDownloadHandler"
+}
+TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"
