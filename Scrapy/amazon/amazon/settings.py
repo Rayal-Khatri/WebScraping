@@ -1,4 +1,4 @@
-# Scrapy settings for quotestoscrape project
+# Scrapy settings for amazon project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -7,17 +7,17 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = "quotestoscrape"
+BOT_NAME = "amazon"
 
-SPIDER_MODULES = ["quotestoscrape.spiders"]
-NEWSPIDER_MODULE = "quotestoscrape.spiders"
+SPIDER_MODULES = ["amazon.spiders"]
+NEWSPIDER_MODULE = "amazon.spiders"
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = "quotestoscrape (+http://www.yourdomain.com)"
+#USER_AGENT = "amazon (+http://www.yourdomain.com)"
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = False
+ROBOTSTXT_OBEY = True
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
@@ -45,13 +45,13 @@ ROBOTSTXT_OBEY = False
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    "quotestoscrape.middlewares.QuotestoscrapeSpiderMiddleware": 543,
+#    "amazon.middlewares.AmazonSpiderMiddleware": 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    "quotestoscrape.middlewares.QuotestoscrapeDownloaderMiddleware": 543,
+#    "amazon.middlewares.AmazonDownloaderMiddleware": 543,
 #}
 
 # Enable or disable extensions
@@ -63,7 +63,7 @@ ROBOTSTXT_OBEY = False
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    "quotestoscrape.pipelines.QuotestoscrapePipeline": 300,
+#    "amazon.pipelines.AmazonPipeline": 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
@@ -89,9 +89,5 @@ ROBOTSTXT_OBEY = False
 
 # Set settings whose default value is deprecated to a future-proof value
 REQUEST_FINGERPRINTER_IMPLEMENTATION = "2.7"
-FEED_EXPORT_ENCODING = "utf-8"
-DOWNLOAD_HANDLERS = {
-    "http": "scrapy_playwright.handler.ScrapyPlaywrightDownloadHandler",
-    "https": "scrapy_playwright.handler.ScrapyPlaywrightDownloadHandler"
-}
 TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"
+FEED_EXPORT_ENCODING = "utf-8"
