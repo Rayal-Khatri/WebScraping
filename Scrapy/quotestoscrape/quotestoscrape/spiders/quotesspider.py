@@ -8,14 +8,15 @@ class QuotesspiderSpider(scrapy.Spider):
     name = "quotesspider"
 
     def start_requests(self):
-        url = "https://quotes.toscrape.com/scroll"
+        url = "https://quotes.toscrape.com/js/"
         yield scrapy.Request(url, meta=dict(
             playwright=True,
             playwright_include_page=True,
             playwright_page_methods=[
                 PageMethod('wait_for_selector', 'div.quote'),
-                PageMethod('evaluate', 'window.scrollBy(0, document.body.scrollHeight)'),
-                PageMethod('wait_for_selector', 'div.quote:nth-child(11)'),
+
+                # PageMethod('evaluate', 'window.scrollBy(0, document.body.scrollHeight)'),
+                # PageMethod('wait_for_selector', 'div.quote:nth-child(11)'),
             ],
             errback=self.errback 
         ))
@@ -24,6 +25,7 @@ class QuotesspiderSpider(scrapy.Spider):
     
     async def parse(self, response):
         page = response.meta["playwright_page"]
+        screenshot = await page.screenshot(path= "example.png",full_page=True)
         await page.close()
         # -------------------------FOR SCRAPING------------------------
         for quote in response.css('div.quote'):
