@@ -15,11 +15,12 @@ class AmazonspiderSpider(scrapy.Spider):
                 playwright_page_methods=[
                         # -------------For SCROLLING --------------
                     # PageMethod("evaluate", "window.scrollBy(0, document.body.scrollHeight)"),  # Scroll to the bottom
-                    # PageMethod("wait_for_timeout", 2000),
+                    PageMethod("wait_for_timeout", 2000),
                     # PageMethod("wait_for_load_state", "networkidle"),
-                    PageMethod('wait_for_selector', 'div.item-button'),
-                    PageMethod('stop')
-
+                    # PageMethod('wait_for_selector', 'div.item-button'),
+                    # PageMethod('stop')
+                    
+                    PageMethod("click", "a.J_LoadMoreButton"),
                     # PageMethod("click", ".shopMoreBtn"),  # Click the button
                     # PageMethod("wait_for_navigation")
                     ],
@@ -29,7 +30,9 @@ class AmazonspiderSpider(scrapy.Spider):
 
     def parse(self, response):
         open_in_browser(response)
-        pass
+        yield {
+            'name': response.css('.sale-title::text').getall()
+        }
 
 
     async def errback(self, failure):
