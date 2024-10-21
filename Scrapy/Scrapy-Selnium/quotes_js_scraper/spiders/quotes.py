@@ -1,13 +1,23 @@
 import scrapy
-from scrapy_selenium import SeleniumRequest
 from quotes_js_scraper.items import QuoteItem
+ 
+from scrapy_selenium import SeleniumRequest
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support import expected_conditions as EC
 
 class QuotesSpider(scrapy.Spider):
     name = 'quotes'
 
     def start_requests(self):
         url = 'https://quotes.toscrape.com/js/'
-        yield SeleniumRequest(url=url, callback=self.parse, wait_time=10)
+        yield SeleniumRequest(
+                    url=url, 
+                    callback=self.parse, 
+                    script="document.querySelector('.pager .next>a').click()",
+                    # wait_time=10,
+                    # wait_until=EC.element_to_be_clickable((By.CLASS_NAME, 'quote'))
+                    )
+
 
     def parse(self, response):
         quote_item = QuoteItem()

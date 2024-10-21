@@ -6,7 +6,7 @@ NEWSPIDER_MODULE = 'quotes_js_scraper.spiders'
 
 
 SELENIUM_DRIVER_NAME = 'chrome'
-SELENIUM_DRIVER_EXECUTABLE_PATH = 'C:/Users/user/Desktop/Repositories/WebScraping/Scrapy/quotes-js-project/chromedriver.exe'
+SELENIUM_DRIVER_EXECUTABLE_PATH = 'C:/Users/user/Desktop/Repositories/WebScraping/Scrapy/Scrapy-Selnium/chromedriver.exe'
 SELENIUM_DRIVER_ARGUMENTS = ['--no-sandbox', '--disable-dev-shm-usage', 'binary_location=C:/Program Files/BraveSoftware/Brave-Browser/Application/brave.exe']
 
 
