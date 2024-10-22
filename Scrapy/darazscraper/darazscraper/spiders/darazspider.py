@@ -18,29 +18,30 @@ class ClientSideSpider(scrapy.Spider):
             url=url, 
             callback=self.parse, 
             wait_time=1,
-            script="""
-            document.querySelector('a.button.J_LoadMoreButton').click();
-            """,
-
         )
 
 
 
     def parse(self, response):
+
+        # -------------------------------TO LOAD MORE--------------------
         driver = response.meta['driver']
 
-        try:
-            # Waiting for some element that appears after loading more items
-            WebDriverWait(driver, 10).until(
-                EC.presence_of_element_located((By.CSS_SELECTOR, '.sale-title'))
-            )
-        except Exception as e:
-            self.logger.error(f"Error while waiting for content to load: {e}")
+        while True:
+            try:
+                # Wait for the "Load More" button to be clickable
+                load_more_button = WebDriverWait(driver, 10).until(
+                    EC.element_to_be_clickable((By.CSS_SELECTOR, 'a.button.J_LoadMoreButton'))
+                )
+                load_more_button.click()  # Click the "Load More" button
+                time.sleep(3)  # Wait for new content to load
 
-        # Give some additional wait time to ensure content is fully loaded
-        time.sleep(5)
+            except Exception as e:
+                # Break the loop if the button is not found or not clickable
+                print("No more 'Load More' button found or unable to click:", e)
+                break
 
-        # Now fetch the updated page source after clicking the button
+        # # Now fetch the updated page source after clicking the button
         html = driver.page_source
         response = scrapy.Selector(text=html)
 
@@ -49,7 +50,7 @@ class ClientSideSpider(scrapy.Spider):
         print(len(title))
 
         # Logging and yielding the scraped data
-        self.logger.info(f'Total items after clicking Load More: {len(title)}')
+        # self.logger.info(f'Total items after clicking Load More: {len(title)}')
         yield {
             'name': title
         }
