@@ -91,3 +91,17 @@ ROBOTSTXT_OBEY = False
 REQUEST_FINGERPRINTER_IMPLEMENTATION = "2.7"
 TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"
 FEED_EXPORT_ENCODING = "utf-8"
+
+
+
+SELENIUM_DRIVER_NAME = 'chrome'
+SELENIUM_DRIVER_EXECUTABLE_PATH = 'C:/Users/user/Desktop/Repositories/WebScraping/Scrapy/darazscraper/chromedriver.exe'
+SELENIUM_DRIVER_ARGUMENTS = ['--no-sandbox', '--disable-dev-shm-usage', 'binary_location=C:/Program Files/BraveSoftware/Brave-Browser/Application/brave.exe']
+
+
+
+
+DOWNLOADER_MIDDLEWARES = {
+     'scrapy_selenium.SeleniumMiddleware': 800
+     }
+
