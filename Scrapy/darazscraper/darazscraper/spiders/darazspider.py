@@ -23,21 +23,21 @@ class ClientSideSpider(scrapy.Spider):
 
     def parse(self, response):
         # -------------------------------TO LOAD MORE--------------------
-        # driver = response.meta['driver']
+        driver = response.meta['driver']
 
-        # while True:
-        #     try:
-        #         # Wait for the "Load More" button to be clickable
-        #         load_more_button = WebDriverWait(driver, 10).until(
-        #             EC.element_to_be_clickable((By.CSS_SELECTOR, 'a.button.J_LoadMoreButton'))
-        #         )
-        #         load_more_button.click()  # Click the "Load More" button
-        #         time.sleep(2)  # Wait for new content to load
+        while True:
+            try:
+                # Wait for the "Load More" button to be clickable
+                load_more_button = WebDriverWait(driver, 10).until(
+                    EC.element_to_be_clickable((By.CSS_SELECTOR, 'a.button.J_LoadMoreButton'))
+                )
+                load_more_button.click()  # Click the "Load More" button
+                time.sleep(2)  # Wait for new content to load
 
-        #     except Exception as e:
-        #         # Break the loop if the button is not found or not clickable
-        #         print("No more 'Load More' button found or unable to click:", e)
-        #         break
+            except Exception as e:
+                # Break the loop if the button is not found or not clickable
+                print("No more 'Load More' button found or unable to click:", e)
+                break
 
         # # Now fetch the updated page source after clicking the button
         # html = driver.page_source
@@ -45,16 +45,16 @@ class ClientSideSpider(scrapy.Spider):
         # Logging and yielding the scraped data
         # self.logger.info(f'Total items after clicking Load More: {len(title)}')
         # To scrape only 3 items for testing
-        a = 0
+        # a = 0
         for item in response.css('a.flash-unit-a'):
             next_url = "https:"+ item.xpath('@href').get()
             yield SeleniumRequest(
             url=next_url,
             callback=self.parse_item_page,
         )
-            a +=1
-            if a>1:
-                break
+            # a +=1
+            # if a>1:
+            #     break
             
 
         
