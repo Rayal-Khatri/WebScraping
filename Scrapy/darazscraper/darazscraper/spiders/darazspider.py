@@ -4,7 +4,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 import logging
-
+import time
 
 
 class ClientSideSpider(scrapy.Spider):
@@ -22,7 +22,7 @@ class ClientSideSpider(scrapy.Spider):
 
 
     def parse(self, response):
-        # # -------------------------------TO LOAD MORE--------------------
+        # -------------------------------TO LOAD MORE--------------------
         # driver = response.meta['driver']
 
         # while True:
@@ -32,7 +32,7 @@ class ClientSideSpider(scrapy.Spider):
         #             EC.element_to_be_clickable((By.CSS_SELECTOR, 'a.button.J_LoadMoreButton'))
         #         )
         #         load_more_button.click()  # Click the "Load More" button
-        #         time.sleep(3)  # Wait for new content to load
+        #         time.sleep(2)  # Wait for new content to load
 
         #     except Exception as e:
         #         # Break the loop if the button is not found or not clickable
@@ -42,17 +42,18 @@ class ClientSideSpider(scrapy.Spider):
         # # Now fetch the updated page source after clicking the button
         # html = driver.page_source
         # response = scrapy.Selector(text=html)
-
         # Logging and yielding the scraped data
         # self.logger.info(f'Total items after clicking Load More: {len(title)}')
+        # To scrape only 3 items for testing
         a = 0
         for item in response.css('a.flash-unit-a'):
-            # name= item.css('.sale-title::text').get()
-            # price= item.css('.sale-price::text').get()
             next_url = "https:"+ item.xpath('@href').get()
-            yield SeleniumRequest(url=next_url, callback=self.parse_item_page)
+            yield SeleniumRequest(
+            url=next_url,
+            callback=self.parse_item_page,
+        )
             a +=1
-            if a>2:
+            if a>1:
                 break
             
 
@@ -63,12 +64,22 @@ class ClientSideSpider(scrapy.Spider):
         await page.close()
 
     def parse_item_page(self, response):
+        driver = response.meta['driver']
         print("*******************************************")
+
+        # Scroll to the middle of the page
+        driver.execute_script("window.scrollTo(0, document.body.scrollHeight / 2);")  # Scroll to the middle
+        time.sleep(3)
+        try:
+            rating = driver.find_element(By.CSS_SELECTOR, 'span.score-average').text.strip()
+        except Exception as e:
+            rating = 'No rating' 
+
         yield {
             'name': response.css('.pdp-mod-product-badge-title::text').get(),
             'price': response.css('.pdp-price_size_xl::text').get(),
             'delivery_price': response.css('.delivery-option-item_type_standard .no-subtitle::text').get(),
-            'rating': response.css('.score-average::text').get(),
+            'rating':rating,
             'seller': response.css('.seller-name__detail-name::text').get(),
             'seller_rating': response.css('.rating-positive::text').get(),
             'delivery_rating' : response.css('.info-content:nth-child(2) .seller-info-value::text').get(),
