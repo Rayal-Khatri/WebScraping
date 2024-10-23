@@ -96,7 +96,7 @@ FEED_EXPORT_ENCODING = "utf-8"
 
 SELENIUM_DRIVER_NAME = 'chrome'
 SELENIUM_DRIVER_EXECUTABLE_PATH = 'C:/Users/user/Desktop/Repositories/WebScraping/Scrapy/darazscraper/chromedriver.exe'
-SELENIUM_DRIVER_ARGUMENTS = [ '--headless','--no-sandbox', '--disable-dev-shm-usage', 'binary_location=C:/Program Files/BraveSoftware/Brave-Browser/Application/brave.exe']
+SELENIUM_DRIVER_ARGUMENTS = [ '--no-sandbox', '--disable-dev-shm-usage', 'binary_location=C:/Program Files/BraveSoftware/Brave-Browser/Application/brave.exe']
 # '--headless',
 
 

@@ -46,6 +46,8 @@ class ClientSideSpider(scrapy.Spider):
         # self.logger.info(f'Total items after clicking Load More: {len(title)}')
         # To scrape only 3 items for testing
         # a = 0
+        items =  response.css('a.flash-unit-a')
+        print("**************************************************************"+ str(len(items))+ "********************************************************")
         for item in response.css('a.flash-unit-a'):
             next_url = "https:"+ item.xpath('@href').get()
             yield SeleniumRequest(
