@@ -8,7 +8,7 @@ import time
 
 
 class ClientSideSpider(scrapy.Spider):
-    name = 'darazspider'
+    name = 'daraz_flash_sale'
     allowed_domains = ['https://www.daraz.com.np','www.daraz.com.np','daraz.com.np']  
 
     # Entry point for starting requests
