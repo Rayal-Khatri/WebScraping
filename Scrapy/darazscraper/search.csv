@@ -1,32 +1,81 @@
-name,price,delivery_price,rating,seller,seller_rating,delivery_rating,stock
-"3 In 1 Fancy Multifunctional Pencil Sharpener, Eraser And Brush For Student- 1pcs - Pencil Sharpner With Eraser For Office And School Use Set Of 2",Rs. 99,Rs. 70,No rating,Tulsi Maa Store,78%,99%,8
-Crushing It By Gary Vaynerchuk,Rs. 840,Rs. 70,0,BookCrest,95%,98%,2
-Doms 12 Colour Pencils With Sharpner & Extender Inside (Set of 2),Rs. 100,Rs. 70,0,Tirupati Stationery Suppliers,87%,Not enough data,9
-Doms Erasener 2 In 1 Eraser & Shapner Set of 3,Rs. 145,Rs. 70,0,Anylady Stores,82%,96%,10
-Doms Erasener 2 In 1 Eraser & Shapner Set of 3,Rs. 85,Rs. 70,0,parijat patra patrika bikri bitaran,86%,86%,6
-"Rencai Gift Pencil And Eraser (Pack of 10) With Grip ,Cap and Sharpener",Rs. 250,Rs. 70,0,Swet Kaali,90%,97%,3
-Doms Whitener | Non-Toxic Superior Correction Pen | 7ml | Metal Tip For Smooth Flow | Art No. 7296,Rs. 45,Rs. 70,0,Shivashakti Edumart,93%,96%,1
-1pc Astronaut Cartoon Pencil Sharpener Students Pencil SharpenerHand Crank Manual Sharpener Cartoon Pencil Cutter For SchoolStat,"Rs. 4,164",Free,0,Bundle & Save,77%,100%,15
-Creative Cartoon Astronaut Pencil Sharpener Third Gear Adjustable Pencil Sharpener Hand-cranked Automatically Pencil Sharpener,Rs. 830,,No rating,Lonni,81%,100%,0
-Compass Core Pencil Sharpener Pencil Lead Stationery Drafting Tool School Home,Rs. 214,,0,Lonni,81%,100%,0
-Joy Creation 12 Hb Rubber Tipped Graphite Pencil With Sharpner,Rs. 66,,0,Promise Stationery,85%,Not enough data,0
-Doms Erasener 2 In 1 Eraser & Sharpener Set of 3,Rs. 120,Rs. 70,0,H.S. Books & Stationery,91%,100%,15
-Crushing It By Gary Vaynerchuk,Rs. 850,Rs. 70,0,Paschimanchal Books Distributers,94%,96%,2
-"FABER CASTELL Manual Hand Crank Pencil Sharpener Sharpen 8mm in Diameter Candy Colors for Kids,Artists,Student Office Stationery","Rs. 1,860",Free,0,Bundle & Save,77%,100%,15
-BiKreta- Pencil Sharpener 20pcs Pack Cutter,Rs. 100,Rs. 120,0,BeeKretaa,73%,100%,8
-Kitty Pencil Sharpener,Rs. 667,Rs. 70,0,Sampada Stationery & Gift Suppliers,75%,Not enough data,15
-"6 Pcs Metal Pencil Sharpeners, Single and Dual Hole Pencil Sharpeners Manual Art Sharpeners for Colored Pencils",Rs. 575,Rs. 70,0,BAILURE STORE,83%,100%,15
-BiKreta- Pencil Sharpener 20pcs Pack Cutter Doms,Rs. 150,Rs. 120,0,BeeKretaa,73%,100%,15
-Doms Pencil Sharpners -Set Of 20 Pieces(1 Packet),Rs. 99,Rs. 120,4.0,NB Sulav Books & Stationery,94%,100%,15
-Exclusive Cute Bus Design Fancy Pencil Sharpner,Rs. 539,Rs. 70,4.0,KOseli Ghar Satdobato,87%,100%,1
-Electric Sharpner/ Pencil Sharpener,Rs. 750,Rs. 70,4.0,Richmond books and stationery,83%,100%,5
-Tenwin Electric Auto Pencil Sharpener Safe Student Helical Steel Blade Sharpener for Artists Kids Adults Colored Pencils,"Rs. 3,519",Free,4.0,Bundle & Save,77%,100%,15
-Unicorn Shape Hand Cracked Pencil Sharpener,Rs. 475,Rs. 70,4.0,RB Stationary,82%,100%,9
-Doms Pencil Sharpeners & Erasers (20*20 Pieces) (Combo of 2),Rs. 200,Rs. 70,4.0,Progress Book & Stationary,94%,100%,6
-"3 In 1 Fancy Multifunctional Pencil Sharpener, Eraser And Brush For Student- 1pcs - Pencil Sharpener For Office And School Use |",Rs. 99,Rs. 70,4.0,Milky Way (Raj Group),83%,97%,10
-Machine Pencil Sharpener,Rs. 499,Rs. 70,4.0,RB Stationary,82%,100%,9
-(M&G) Metal Pencil Sharpener,Rs. 386,Rs. 70,4.0,Bundle & Save,77%,100%,15
-Doms Pencil Eraser And Sharpner 2 In 1,Rs. 45,Rs. 120,4.4,Badimalika Stationery,72%,Not enough data,15
-Electric Pencil Sharpener,Rs. 599,Rs. 70,4.4,RB Stationary,82%,100%,1
-Unicorn Pencil Machine Sharpener,Rs. 432,Rs. 70,4.4,RB Stationary,82%,100%,1
-"3 In 1 Fancy Multifunctional Pencil Sharpener, Eraser And Brush For Student- 1pcs - Pencil Sharpener For Office And School Use |Set Of 2",Rs. 99,Rs. 70,4.4,Anylady Stores,82%,96%,15
+name,price,rating,no_of_rating,delivery_price,seller,seller_rating,delivery_rating,stock
+Chana 1kg Best Quality,Rs. 220,4.3,14 Ratings,Rs. 70,Subha Abik Store,87%,88%,15
+Kabuli Chana White Chick Peas (Chole Bhature Chana) 1 Kg,Rs. 300,4.3,No Ratings,Rs. 70,Subha Abik Store,87%,88%,4
+Fress Indian Chana -1 Kg,Rs. 199,4.3,No Ratings,Rs. 120,Reja All Pasal,87%,78%,15
+Khairo Chana 1 kg,Rs. 230,4.3,3 Ratings,Rs. 70,Raunak Masala And Foods,95%,100%,10
+Chick Peas Split ( Chana Daal) 1 Kg,Rs. 238,4.3,2 Ratings,Rs. 70,GaunGhar Organic Store,91%,93%,13
+Kabuli Chana (Chick Peas) 2 kg,Rs. 500,4.3,1 Ratings,Rs. 70,Home Supplies,92%,Not enough data,3
+Red Chana Whole 1kg,Rs. 195,4.3,No Ratings,Rs. 120,Kirana Pasal.,81%,100%,15
+Chickpeas Satu(Chana Satu)-500g,Rs. 140,4.3,4 Ratings,Rs. 70,Nepali mato khadyanna pvt. ltd.,97%,Not enough data,5
+Agraj ko Bhuteko Chana -1000 GM,Rs. 380,0,29 Ratings,Rs. 70,Arosi Enterprises,89%,100%,15
+Pahura Delicious Masala Kawali Chana  200g,Rs. 100,0,No Ratings,Rs. 70,Pahura Food,74%,Not enough data,15
+Fine Chana Masala 50Grm,Rs. 55,0,4 Ratings,Rs. 120,Asian Trading,81%,100%,15
+Aama Agro Chana Sato-500g,Rs. 147,0,No Ratings,Rs. 120,##lr8LbVpH$$,100%,Not enough data,5
+Baluwatar Organics Mula Ko Chana 200g,Rs. 235,0,No Ratings,Rs. 70,Baluwatar Organics Pvt Ltd,82%,Not enough data,10
+Bhuteko Chana -500 GM,Rs. 180,0,2 Ratings,Rs. 70,Arosi Enterprises,89%,100%,15
+Pack Of 12 Chwassa Dry Chana 55 Gm,Rs. 360,0,No Ratings,Rs. 70,Chwassa food product,89%,Not enough data,15
+Baluwatar Organics Mula Ko Chana 1Kg,"Rs. 1,035",0,No Ratings,Rs. 70,Baluwatar Organics Pvt Ltd,82%,Not enough data,10
+Hira Foods Chana 150g,Rs. 60,0,No Ratings,Rs. 70,Hira food production,94%,Not enough data,15
+Masala Gedagudi - Chana/Chola Masala (Homemade Chickpea Seasoning Spice Mix) - 100g - Lotus Products,Rs. 245,No rating,No Ratings,Rs. 70,Lotus Products Nepal,78%,Not enough data,15
+Baluwatar Organics Mula Ko Chana 500g,Rs. 535,0,No Ratings,Rs. 70,Baluwatar Organics Pvt Ltd,82%,Not enough data,10
+Poshak Chana Satu 400 Grams,Rs. 160,0,No Ratings,Rs. 70,Triratna Foods,97%,Not enough data,15
+Anoop Pure Indian Chana Sattu - 500Gm Pack Of 2,Rs. 345,0,No Ratings,Rs. 120,Garima general Store,85%,100%,15
+Himalayan Herbs & Organic Bel Chana - 1Kg,Rs. 370,0,No Ratings,Free,himalayan herbs & organic center,80%,100%,10
+"Century Chana Masala, 50g",Rs. 61,0,No Ratings,Rs. 70,Uttam kirana pasal,,100%,10
+Anoop Indian Chana Pure Sattu - 500Gm,Rs. 180,0,No Ratings,Rs. 120,Garima general Store,85%,100%,15
+Poshak Chana Satu With Almonds 400 Grams,Rs. 175,0,8 Ratings,Rs. 70,Triratna Foods,97%,Not enough data,15
+Sattu (Chick Peas Powder),Rs. 230,0,No Ratings,Rs. 70,Didiko Sattu,100%,Not enough data,10
+Bhuteko Chana -2 KG,Rs. 650,0,2 Ratings,Rs. 125,Agraj Foods Pvt.Ltd.,89%,100%,15
+Samasamyik Gyan Bibey Chana Bisesh 2079,Rs. 345,5.0,No Ratings,Rs. 70,Pairavi Prakashan,83%,100%,5
+Masala Gedagudi - Chana /Chola Masala (Homemade Chickpea Seasoning Spice Mix) - 50g POUCH - Lotus Products Nepal,Rs. 125,4.0,No Ratings,Rs. 70,Lotus Products Nepal,78%,Not enough data,15
+Poshilo Chana Masala Satu 750 gm,Rs. 430,4.0,No Ratings,Rs. 70,Poshilo Foods,91%,100%,5
+Hira Foods Chana 300g,Rs. 110,4.0,1 Ratings,Rs. 70,Hira food production,94%,Not enough data,15
+Chana Daal Best Quality - 2 Kg,Rs. 450,4.0,No Ratings,Rs. 70,Subha Abik Store,87%,88%,9
+Anoop Pure Chana Sattu - 500Gm - Pack Of 3,Rs. 480,4.0,1 Ratings,Rs. 155,Garima general Store,85%,100%,15
+Bhuteko Chana -2 KG,Rs. 550,4.0,No Ratings,Rs. 125,Arosi Enterprises,89%,100%,15
+Poshak Chana Satu  800 Grams (400gm 2 Packets),Rs. 315,4.0,5 Ratings,Rs. 70,Triratna Foods,97%,Not enough data,15
+Chana Sattu 500g,Rs. 220,4.0,1 Ratings,Rs. 120,Healthy Ghar Nepal,80%,98%,15
+Chwassa Dry Chana 150 Gm,Rs. 60,5.0,1 Ratings,Rs. 70,Chwassa food product,89%,Not enough data,15
+Poshak Chana Satu With Almonds 800 Grams (400gm 2 Packets),Rs. 345,5.0,1 Ratings,Rs. 70,Triratna Foods,97%,Not enough data,15
+Patanjali Chana Sattu 500grm Pack of 2pc,Rs. 474,5.0,1 Ratings,Rs. 155,Healthy Ghar Nepal,80%,98%,15
+Chwassa Dry Chana 300 Gm,Rs. 120,5.0,2 Ratings,Rs. 70,Chwassa food product,89%,Not enough data,15
+Roasted Chana 1000 GM,Rs. 325,5.0,1 Ratings,Rs. 70,Agraj Foods Pvt.Ltd.,89%,100%,15
+Chwassa Dry Chana 500 Gm,Rs. 160,5.0,1 Ratings,Rs. 70,Chwassa food product,89%,Not enough data,15
+"Ashirwad Chana Besan Flour, 500g",Rs. 135,5.0,1 Ratings,Rs. 70,Gyan Nepal,95%,100%,4
+Chwassa Dry Chana 55 Gm,Rs. 30,5.0,2 Ratings,Rs. 70,Chwassa food product,89%,Not enough data,15
+Patanjali Chana Sattu 500grm,Rs. 247,5.0,1 Ratings,Rs. 120,Healthy Ghar Nepal,80%,98%,15
+Fried Chick Peas 0.5Kg Bhuteko Chana,Rs. 190,4.3,No Ratings,Rs. 70,Subha Abik Store,87%,88%,15
+Mato Kabuli chana 1kg,Rs. 265,4.3,1 Ratings,Rs. 70,MATO NEPAL,95%,88%,15
+Hira Foods Chana 500g,Rs. 160,4.8,17 Ratings,Rs. 70,Hira food production,94%,Not enough data,15
+Chana Sattu - 500 Gm,Rs. 160,4.8,4 Ratings,Rs. 70,Healthy and Tasty Food,91%,Not enough data,11
+Gyan Chana Sattu 1/2 Kg Pkt,Rs. 175,4.8,2 Ratings,Rs. 70,Gyan Nepal,95%,100%,11
+Chana Sattu,Rs. 160,4.8,3 Ratings,Rs. 70,Healthy and Tasty Food,91%,Not enough data,15
+Mato Red Chana 1 KG,Rs. 195,4.8,5 Ratings,Rs. 70,MATO NEPAL,95%,88%,15
+Fried Chik Pea 800gm  Chana,Rs. 300,4.8,46 Ratings,Rs. 70,Reuel brothers and sons traders pvt ltd,89%,100%,15
+Mato Chana Dal 1 KG,Rs. 220,4.8,6 Ratings,Rs. 70,MATO NEPAL,95%,88%,15
+Chana Daal Best Quality- 1 Kg,Rs. 220,4.8,2 Ratings,Rs. 70,Subha Abik Store,87%,88%,15
+Besan ( Chana Besan ) 500 Gm,Rs. 150,4.0,10 Ratings,Rs. 70,GaunGhar Organic Store,91%,93%,9
+Chana Daal - 1 Kg,Rs. 230,4.0,5 Ratings,Rs. 70,Subha Abik Store,87%,88%,15
+Hilife Chana Dal Flour Besan 200GM | 12-in-1 Power Breakfast | Nepal’s No. 1 Besan | Besan | Chickpea flour | Gram flour | Chana Dal | Pulse flour,Rs. 57,4.0,No Ratings,Rs. 70, Hilife Foods,,Not enough data,15
+Hilife Chana Dal Flour Besan 500GM | 12-in-1 Power Breakfast | Nepal’s No. 1 Besan | Besan | Chickpea flour | Gram flour | Chana Dal | Pulse flour,Rs. 124,4.0,1 Ratings,Rs. 70, Hilife Foods,,Not enough data,15
+Baluwatar Organics Chana Satu 1Kg,Rs. 400,0,No Ratings,Rs. 70,Baluwatar Organics Pvt Ltd,82%,Not enough data,15
+Fried Chick Peas 1Kg Bhuteko Chana,Rs. 400,0,No Ratings,Rs. 70,Subha Abik Store,87%,88%,15
+BS Local Organic Gram Local Chana 1Kg,Rs. 320,0,No Ratings,Rs. 70,BS Local Organic,78%,50%,15
+Baluwatar Organics Chana 1Kg,Rs. 300,0,No Ratings,Rs. 70,Baluwatar Organics Pvt Ltd,82%,Not enough data,15
+B S Local Organic Chana Gram Local 1kg,Rs. 290,4.4,No Ratings,Rs. 70,BS Local Organic,78%,50%,15
+Kauli Chana-1 kg,Rs. 260,4.4,4 Ratings,Rs. 120,Reja All Pasal,87%,78%,10
+Local Farm Organic Chana 500g | Premium Quality Chickpeas | Certified Organic & Fresh,Rs. 130,4.8,No Ratings,Rs. 70,Local Farm Pvt.Ltd.,91%,100%,15
+"Mato Beans Combo (Kabuli chana, Red chana, Seto Bhatmas, Kwati, Kacho Badam, bodi, popcorn, rajma) 1kg","Rs. 1,955",4.8,No Ratings,Rs. 415,MATO NEPAL,95%,88%,15
+Combo Yellow Daal (Rahar Chana Mung) 3 Kg,Rs. 780,4.8,No Ratings,Rs. 200,GaunGhar Organic Store,91%,93%,9
+Kabuli Chana White Chick Peas [ Chole Bhature Chana ]1 Kg,Rs. 290,4.8,4 Ratings,Rs. 70,Mahalaxmi Store and Suppliers,92%,100%,6
+Fried Chik Peas - 500Gm Bhuteko Chana,Rs. 180,4.1,5 Ratings,Rs. 120,Garima general Store,85%,100%,15
+Khairo Chana 500 Gm,Rs. 120,4.1,4 Ratings,Rs. 70,Raunak Masala And Foods,95%,100%,8
+Fried Chik Peas - 2kg Bhuteko Chana,Rs. 600,4.1,2 Ratings,Rs. 155,Garima general Store,85%,100%,15
+SHOP WHOLLY Roasted ChickPea (Bhuteko Chana) 1kg,Rs. 350,4.9,14 Ratings,Rs. 70,Shop Wholly Network,89%,99%,15
+Kabuli Chana ( White Chickpea) 1 Kg,Rs. 290,4.9,7 Ratings,Rs. 70,GaunGhar Organic Store,91%,93%,9
+Chick Peas ( Chana Geda) 1 Kg,Rs. 208,4.9,19 Ratings,Rs. 70,GaunGhar Organic Store,91%,93%,8
+SHOP WHOLLY Roasted ChickPea (Bhuteko Chana) 250gm,Rs. 95,4.4,15 Ratings,Rs. 70,Shop Wholly Network,89%,99%,14
+Agraj ko Roasted Chana -500 GM,Rs. 180,4.4,65 Ratings,Rs. 70,Arosi Enterprises,89%,100%,15
+Fried Chik Peas -1kg Bhuteko Chana,Rs. 300,4.4,27 Ratings,Rs. 120,Garima general Store,85%,100%,15
+SHOP WHOLLY Roasted ChickPea (Bhuteko Chana) 500gm,Rs. 185,4.4,20 Ratings,Rs. 70,Shop Wholly Network,89%,99%,15
+Bhuteko Chana -500 GM,Rs. 200,4.4,37 Ratings,Rs. 70,Agraj Foods Pvt.Ltd.,89%,100%,15
